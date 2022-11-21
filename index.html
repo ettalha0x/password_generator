@@ -17,30 +17,9 @@
     <h1 class="container">Secure Password Generator</h1>
     <div class="container">
         <form>
-                    <label>Enter website url</label><br>
-                    <input type="text" id="url"size="27">
-                    <label>Enter website username</label><br>
-                    <input type="text" id="username"size="27">
-                    <label>Select Password Length</label><br>
-                    <select name="length" id="Inputlength">
-                    <optgroup label="Weak">
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                    </optgroup>
-                    <optgroup label="Meduim"></optgroup>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                    </optgroup>
-                    <optgroup label="streng"></optgroup>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                    </optgroup>
-                    </select>
+                    <input type="text" placeholder="Enter website url" id="url"size="27">
+                    <input type="text" placeholder="Enter website username" id="username"size="27">
+                    <input type="number" placeholder="Select Password Length" id="Inputlength"size="27">
                     <input type="button" onclick="(password(length));" value="Generate Password"><br><br>
                     <input type="hidden" id="finalpassword"size="27">
                     <input type="button" onclick="copypassword()" value="Copy password"><br><br>

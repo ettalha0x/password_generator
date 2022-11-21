@@ -8,21 +8,21 @@ h1{
     border-radius: 10px;
 }
 label
-{   
+{
     font-size:150% ;
     margin: 8px 100px;
 }
- 
+
 progress
 {
     margin: 8px 92px;
     width: 80%;
     height:30px;
-    
+
 }
 select{ margin-left: 100px;}
-input[type=text], select
-{   
+input[type=text], input[type=number], select
+{
     width: 80%;
     padding: 12px 20px;
     margin: 8px 92px;
@@ -51,8 +51,8 @@ input[type=button] {
     top: 0%;
     left: 38%;
     transform: translate(-0%,-38%);
-    
-    
+
+
 }
 .created-by
 {
