@@ -1,22 +1,22 @@
 let finalpassword = ' ';
-let checkqa = 0;
+let checkqr = 0;
 //function that generate the password
 function password(length) {
-    var length = document.getElementById("Inputlength").value;
+    var length = document.getElementById('Inputlength').value;
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&*+<=>?@';
     var charactersLength = characters.length;
     for ( var i = 0; i < length; i++ ) {
           result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
-    document.getElementById("finalpassword").value=result ;
+    document.getElementById('finalpassword').value=result ;
     finalpassword = result;
     checkpassword(finalpassword);
 }
 
 //function that copy password
 function copypassword() {
-    var copyText = document.getElementById("finalpassword");
+    var copyText = document.getElementById('finalpassword');
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
@@ -24,12 +24,12 @@ function copypassword() {
 
 //function that generate QR code
 function generateQR() {
-    if (checkqa == 0)
+    if (checkqr == 0)
     {
         var qrcode = new QRCode(document.getElementById('qrcode'));
-        var data = document.getElementById("finalpassword");
+        var data = document.getElementById('finalpassword');
         qrcode.makeCode(data.value);
-        checkqa = 1;
+        checkqr = 1;
     }
 }
 
@@ -41,7 +41,7 @@ code.addEventListener('click',function(){checkpassword(code.value)});
 function checkpassword(finalpassword){
     if (finalpassword)
     {
-        var strengthBar= document.getElementById("strength");
+        var strengthBar= document.getElementById('strength');
         var strength=0;
         if (finalpassword.match(/[a-z]+/))
             {strength+=1;}

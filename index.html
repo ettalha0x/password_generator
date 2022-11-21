@@ -17,6 +17,10 @@
     <h1 class="container">Secure Password Generator</h1>
     <div class="container">
         <form>
+                    <label>Enter website url</label><br>
+                    <input type="text" id="url"size="27">
+                    <label>Enter website username</label><br>
+                    <input type="text" id="username"size="27">
                     <label>Select Password Length</label><br>
                     <select name="length" id="Inputlength">
                     <optgroup label="Weak">
@@ -38,7 +42,7 @@
                     </optgroup>
                     </select>
                     <input type="button" onclick="(password(length));" value="Generate Password"><br><br>
-                    <input type="text" id="finalpassword"size="27">
+                    <input type="hidden" id="finalpassword"size="27">
                     <input type="button" onclick="copypassword()" value="Copy password"><br><br>
                     <progress max="100" value="0" id="strength"></progress><br><br>
                     <input type="button" onclick="(generateQR());" value="Generate QR code">
