@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+<body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Password Generator</h1>
+    </nav>
+
+    <main class="container">
+        <div class="website-input">
+            <input type="text" class="input" placeholder="Your website" id="website" autocomplete="off">
+        </div>
+        <div class="labels">
+            <input type="text" class="input" placeholder="Your key 1" id="key1" autocomplete="off">
+            <input type="text" class="input" placeholder="Your key 2" id="key2" autocomplete="off">
+            <input type="text" class="input" placeholder="Your key 3" id="key3" autocomplete="off">
+        </div>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th id="GeneratButton">Generate Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label type="text" id="GeneratedPasswd">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+<script type="module" src="./index.js"></script>
+</html>
